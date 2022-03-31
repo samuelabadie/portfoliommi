@@ -41,7 +41,7 @@ gem "bootsnap", require: false
 gem "sass-rails"
 
 # Bootstrap
-gem 'bootstrap-sass'
+gem 'bootstrap'
 gem 'autoprefixer-rails'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]

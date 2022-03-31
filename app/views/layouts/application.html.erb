@@ -10,6 +10,30 @@
     <%= javascript_importmap_tags %>
   </head>
 
+  <header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <%= link_to image_tag("mmiportfolio.svg", :alt => "logo portfolio mmi", class: "navbar-brand p-2 "), root_path %>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <%= link_to "Mes ateliers", ateliers_path, class: "nav-link"%>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Ajouter atelier", new_atelier_path, class: "nav-link"%>
+        </li>
+      </ul>
+      <div class="d-flex form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Connexion</button>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Inscription</button>
+      </div>
+    </div>
+  </nav>
+  </header>
+
   <body>
     <%= yield %>
   </body>

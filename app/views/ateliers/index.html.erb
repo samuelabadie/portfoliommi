@@ -6,9 +6,10 @@
   <% @ateliers.each do |atelier| %>
     <%= render atelier %>
     <p>
-      <%= link_to "Show this atelier", atelier %>
+      <%= link_to "Modifier cet atelier", atelier %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New atelier", new_atelier_path %>
+<%= link_to "Créer Atelier", new_atelier_path %>
+

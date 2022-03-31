@@ -3,8 +3,8 @@
 <%= render @atelier %>
 
 <div>
-  <%= link_to "Edit this atelier", edit_atelier_path(@atelier) %> |
-  <%= link_to "Back to ateliers", ateliers_path %>
+  <%= link_to "Modifier atelier", edit_atelier_path(@atelier) %> |
+  <%= link_to "Mes ateliers", ateliers_path %>
 
-  <%= button_to "Destroy this atelier", @atelier, method: :delete %>
+  <%= button_to "Supprimer cet atelier", @atelier, method: :delete %>
 </div>

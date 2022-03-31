@@ -1,5 +1,6 @@
-<%= form_with(model: atelier) do |form| %>
-  <% if atelier.errors.any? %>
+<%= simple_form_for atelier do  |f| %>
+
+<% if atelier.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(atelier.errors.count, "error") %> prohibited this atelier from being saved:</h2>
 
@@ -11,48 +12,18 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_area :name %>
-  </div>
+<%= f.input :name %>
+<%= f.input :domains%>
+<%= f.input :description %>
+<%= f.input :started_at %>
+<%= f.input :ended_at %>
+<%= f.input :image %>
+<%= f.input :credits %>
+<%= f.input :tools %>
 
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_area :description %>
-  </div>
+<%= f.button :submit %>
 
-  <div>
-    <%= form.label :domains, style: "display: block" %>
-    <%= form.number_field :domains %>
-  </div>
 
-  <div>
-    <%= form.label :started_at, style: "display: block" %>
-    <%= form.date_field :started_at %>
-  </div>
-
-  <div>
-    <%= form.label :ended_at, style: "display: block" %>
-    <%= form.date_field :ended_at %>
-  </div>
-
-  <div>
-    <%= form.label :image, style: "display: block" %>
-    <%= form.text_area :image %>
-  </div>
-
-  <div>
-    <%= form.label :credits, style: "display: block" %>
-    <%= form.text_area :credits %>
-  </div>
-
-  <div>
-    <%= form.label :tools, style: "display: block" %>
-    <%= form.text_area :tools %>
-  </div>
-
-  <div>
-    <%= form.submit %>
-  </div>
 <% end %>
+
 
