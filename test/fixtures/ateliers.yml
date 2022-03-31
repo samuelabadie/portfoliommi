@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  description: MyText
+  domains: 1
+  started_at: 2022-03-30
+  ended_at: 2022-03-30
+  image: MyText
+  credits: MyText
+  tools: MyText
+
+two:
+  name: MyText
+  description: MyText
+  domains: 1
+  started_at: 2022-03-30
+  ended_at: 2022-03-30
+  image: MyText
+  credits: MyText
+  tools: MyText
