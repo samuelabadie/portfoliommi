@@ -14,5 +14,9 @@
  *= require_self
  */
 
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
 
- /* coucou */
+ body{
+     background-color:red;
+}
