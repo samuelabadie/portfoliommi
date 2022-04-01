@@ -1,5 +1,14 @@
-@import "bootstrap";
+$primary :blue;
+
+
+
 
  body{
-     background-color:white;
+     background-color:blue;
 }
+
+.w-60 {
+    width: 60%;
+}
+
+@import "bootstrap";
