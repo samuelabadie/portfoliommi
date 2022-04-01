@@ -1,9 +1,14 @@
+<div class="d-flex justify-content-center">
 <h1>Nouvel Atelier </h1>
-
-<%= render "form", atelier: @atelier %>
-
-<br>
-
-<div>
-  <%= link_to "mes ateliers", ateliers_path %>
 </div>
+
+
+<div class="container ">
+  <div class="w-70 mx-auto p-3">
+      <%= link_to "mes ateliers", ateliers_path %>
+    <%= render "form", atelier: @atelier %>
+</div>
+ </div>
+
+
+
